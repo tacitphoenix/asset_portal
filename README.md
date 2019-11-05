@@ -1,24 +1,14 @@
-# README
+# Asset Portal
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sample Rails Neo4j application. Using the [Neo4j Core Gem](https://github.com/neo4jrb/neo4j-core)
+for low level driver for connecting to Neo4j and [Neo4j Gem](https://github.com/neo4jrb/neo4j) a
+OGM (Object Graph Mapper) to the Neo4j graph database.
 
-Things you may want to cover:
+This sample application can be created from scratch following this
+[tutorial](https://neo4j.com/developer/ruby-course/).
 
-* Ruby version
+## Setup
+```rails
+bundle install
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
