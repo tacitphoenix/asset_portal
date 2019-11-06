@@ -5,7 +5,8 @@ for low level driver for connecting to Neo4j and [Neo4j Gem](https://github.com/
 OGM (Object Graph Mapper) to the Neo4j graph database.
 
 This sample application can be created from scratch following this
-[tutorial](https://neo4j.com/developer/ruby-course/).
+[tutorial](https://neo4j.com/developer/ruby-course/). Use the [Neo4j.rb documentation](https://neo4jrb.readthedocs.io/en/stable/Introduction.html) as a reference on how to use the Neo4j
+Ruby gems.
 
 ## Setup
 ```rails
