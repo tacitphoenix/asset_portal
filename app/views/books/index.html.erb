@@ -21,7 +21,13 @@
         <td><%= book.title %></td>
         <td><%= book.year_published %></td>
         <td><%= book.author.try(:name) %></td>
-        <td><%= book.categories.map(&:name) %></td>
+        <td>
+          <ul>
+            <% book.categories.each do |category| %>
+              <li><%= link_to category.name, category %></li>
+            <% end %>
+          </ul>
+        </td>
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>

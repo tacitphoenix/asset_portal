@@ -22,7 +22,7 @@
 
 <p>
   <strong>Categories:</strong>
-  <%= @book.categories.map(&:name) %>
+  <%= @book.categories.map(&:name).to_sentence %>
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
