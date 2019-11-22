@@ -15,7 +15,7 @@
 - CONSTRAINT ON ( `neo4j::migrations::schemamigration`:`Neo4j::Migrations::SchemaMigration`
   ) ASSERT `neo4j::migrations::schemamigration`.migration_id IS UNIQUE
 - CONSTRAINT ON ( asset:Asset ) ASSERT asset.uuid IS UNIQUE
-- CONSTRAINT ON ( book:Book ) ASSERT book.uuid IS UNIQUE
+- CONSTRAINT ON ( book:Book ) ASSERT book.isbn IS UNIQUE
 - CONSTRAINT ON ( category:Category ) ASSERT category.uuid IS UNIQUE
 - CONSTRAINT ON ( person:Person ) ASSERT person.uuid IS UNIQUE
 - CONSTRAINT ON ( user:User ) ASSERT user.uuid IS UNIQUE
