@@ -17,12 +17,12 @@
 
 <p>
   <strong>Author:</strong>
-  <%= @book.author %>
+  <%= @book.author.try(:name) %>
 </p>
 
 <p>
   <strong>Category:</strong>
-  <%= @book.category %>
+  <%= @book.category.try(:name) %>
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
