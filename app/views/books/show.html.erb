@@ -21,8 +21,8 @@
 </p>
 
 <p>
-  <strong>Category:</strong>
-  <%= @book.category.try(:name) %>
+  <strong>Categories:</strong>
+  <%= @book.categories.map(&:name) %>
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |

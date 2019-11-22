@@ -4,7 +4,7 @@ class BooksController < ApplicationController
   # GET /books
   # GET /books.json
   def index
-    @books = Book.all.with_associations(:author, :category)
+    @books = Book.all.with_associations(:author, :categories)
   end
 
   # GET /books/1
