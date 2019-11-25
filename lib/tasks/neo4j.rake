@@ -14,12 +14,12 @@ namespace :neo4j do
     desc "Load data"
     task :load_data => :environment do
         users = (1..10).to_a.map{|n| create_user}
-        categories = (1..5).to_a.map{|n| create_category}
-        assets = (1..10).to_a.map{|n| create_asset}
-        books = (1..20).to_a.map do |n| 
+        categories = (1..10).to_a.map{|n| create_category}
+        assets = (1..20).to_a.map{|n| create_asset}
+        books = (1..40).to_a.map do |n| 
             user = users.sample
-            category = categories.sample
-            create_book(user, category)
+            sample_categories = categories.sample(3)
+            create_book(user, sample_categories)
         end
     end
 
